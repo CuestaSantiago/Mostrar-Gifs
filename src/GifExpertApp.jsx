@@ -1,6 +1,6 @@
 // comando para crear un componente de forma rápida rafc+tab
 import { useState } from "react";
-import {AddCategory} from './components/AddCategory'
+import { AddCategory } from "./components/AddCategory";
 
 export const GifExpertApp = () => {
   const [categories, setCategories] = useState(["One Punch", "Dragon Ball"]);
@@ -10,19 +10,20 @@ export const GifExpertApp = () => {
       "Dragon Ball",
     ]);
   }
-  const onAddCategory = () => {
+  const onAddCategory = (newCategory) => {
     // setCategories([...categories,'One Pice'])
     // setCategories(categories.concat(["One Pice"]));
     // setCategories(cat => cat.concat(["One Pice"]))
-    setCategories((cat) => ["One Pice", ...cat]);
+    // console.log(newCategory);
+    setCategories((cat) => [newCategory, ...cat]);
   };
   return (
     <>
       {/* titulo de la aplicacion */}
       <h1>GifExpertApp</h1>
       {/* Input */}
-      <AddCategory onAddCategory={ setCategories } />
-      
+      <AddCategory onNewValue={onAddCategory} />
+
       {/* Listado de Gif */}
       <ol>
         {categories.map((category) => {
