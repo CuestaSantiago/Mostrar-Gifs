@@ -1,10 +1,14 @@
 * {
   font-family: Helvetica, Arial, sans-serif;
   background-color: rgb(234, 234, 234);
+  margin: 10px;
 }
 
 body {
   padding: 60px;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
 }
 
 input {
@@ -32,6 +36,7 @@ h3 {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  margin: 10px;
 }
 
 .card {
@@ -42,8 +47,9 @@ h3 {
   box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.03);
   display: flex;
   flex-direction: column;
-  height: 0%;  
+  height: 0%;
   justify-content: center;
+  margin: 10px;
   margin-bottom: 20px;
   margin-right: 20px;
   overflow: hidden;
@@ -60,4 +66,27 @@ h3 {
 
 .card img {
   width: 100%;
+}
+
+button {
+  margin: 10px;
+}
+.boton {
+  cursor: pointer;
+  border: 10px solid #2e518b; /*anchura, estilo y color borde*/
+  padding: 10px; /*espacio alrededor texto*/
+  background-color: #2e518b; /*color botón*/
+  color: #ffffff; /*color texto*/
+  text-decoration: none; /*decoración texto*/
+  text-transform: capitalize; /*capitalización texto*/
+  font-family: "Helvetica", sans-serif; /*tipografía texto*/
+  border-radius: 10px; /*bordes redondos*/
+}
+
+.icons {
+  width: 50px;
+  text-align: right;
+  background-color: transparent;
+  transition: all 0.5s;
+  cursor: pointer;
 }
