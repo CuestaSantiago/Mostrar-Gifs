@@ -1,7 +1,6 @@
 // comando para crear un componente de forma rápida rafc+tab
 import { useState } from "react";
-import { AddCategory } from "./components/AddCategory";
-import { GIfGrid } from "./components/GIfGrid";
+import { AddCategory, GIfGrid  } from "./components/";
 
 export const GifExpertApp = () => {
   const [categories, setCategories] = useState(["One Punch"]);
